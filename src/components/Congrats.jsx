@@ -3,10 +3,10 @@ import React from "react";
 export default ({ success }) => {
   if (success) {
     return (
-      <div id="component_congrats">
-        <span id="message_congrats">
+      <div id="component_congrats" className="ui success message">
+        <div id="message_congrats" className="header">
           Congraturations! You guessed the word!
-        </span>
+        </div>
       </div>
     );
   } else {
