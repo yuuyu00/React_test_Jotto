@@ -1,6 +1,4 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
 
 import GuessedWords from "./components/GuessedWords";
 import Congrats from "./components/Congrats";
