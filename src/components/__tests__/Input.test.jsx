@@ -54,4 +54,21 @@ describe("レンダリング", () => {
       expect(wrapper.find("button")).toHaveLength(0);
     });
   });
+
+  describe("propsの確認", () => {
+    let wrapper;
+    const store = createStore(() => ({ success: true }));
+
+    beforeEach(() => {
+      wrapper = shallow(<Input store={store} />)
+        .dive()
+        .dive();
+    });
+
+    it("props", () => {
+      // const success = wrapper.instance().props.success;
+      // expect(success).toBe(true);
+      console.log(wrapper);
+    });
+  });
 });

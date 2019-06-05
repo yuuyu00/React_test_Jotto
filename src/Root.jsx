@@ -1,11 +1,7 @@
 import React from "react";
-import { createStore } from "redux";
-import { Provider } from "react-redux";
 
-import reducers from "./reducers";
-
-const store = createStore(reducers);
+import connectToStore from "./utils/connectToStore";
 
 export default ({ children }) => {
-  return <Provider store={store}>{children}</Provider>;
+  return connectToStore(children);
 };

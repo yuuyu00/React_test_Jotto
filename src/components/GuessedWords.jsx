@@ -1,6 +1,8 @@
 import React from "react";
 
 export default props => {
+  const getLetterMatchCount = (guessedWord, secredword) => {};
+
   const renderContents = () => {
     if (props.guessedWords.length === 0) {
       return (
